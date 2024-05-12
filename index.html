@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="background-container">
+        <div id="background-image"></div>
+    </div>
+
+    
+   <header>
+   
+    <div class="username">
+        <span style="font-family: 'Material Symbols Outlined', sans-serif;">👤</span> Nombre de Usuario
+    </div>
+    
+</header>
+<div class="ticker-wrap">
+    <div class="ticker"></div>
+</div>
+    
+
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Divisas</a></li>
+        <li><a href="Temperatura.html">Temperatura</a></li>
+        <li><a href="Conversor de Tiempo de Trabajo.html">Tiempo</a></li>
+       
+    </ul>
+</nav>
+   
+    <main >
+        
+        
+        <!-- Conversor de Divisas -->
+        <div class="conversor">
+            <h2>Conversor de Divisas</h2>
+            <input type="number" id="amount" placeholder="Cantidad a convertir">
+            
+            <span id="fromFlag" class="flag-icon flag-icon-us"></span>
+            <select id="fromCurrency">
+                <option value="USD" data-icon="flag-icon-us">USD</option>
+                <option value="EUR" data-icon="flag-icon-eu">EUR</option>
+                <option value="GBP" data-icon="flag-icon-gb">GBP</option>
+                <option value="MXN" data-icon="flag-icon-mx">MXN</option>
+                <option value="BRL" data-icon="flag-icon-br">BRL</option>
+                <option value="ARS" data-icon="flag-icon-ar">ARS</option>
+                <option value="JPY" data-icon="flag-icon-jp">JPY</option>
+            </select>
+            
+            <!-- Botón de intercambio -->
+            <button id="swapButton" onclick="exchangeCurrencies()">
+                <i class="fas fa-exchange-alt"></i>
+            </button>
+            
+            <span id="toFlag" class="flag-icon flag-icon-us"></span>
+            <select id="toCurrency">
+                <option value="USD" data-icon="flag-icon-us">USD</option>
+                <option value="EUR" data-icon="flag-icon-eu">EUR</option>
+                <option value="GBP" data-icon="flag-icon-gb">GBP</option>
+                <option value="MXN" data-icon="flag-icon-mx">MXN</option>
+                <option value="BRL" data-icon="flag-icon-br">BRL</option>
+                <option value="ARS" data-icon="flag-icon-ar">ARS</option>
+                <option value="JPY" data-icon="flag-icon-jp">JPY</option>
+            </select>
+           
+
+
+            
+            <button onclick="convertCurrency()">Convertir</button>
+            <div id="result">
+                <div id="resultLarge"></div>
+                <div id="resultSmall"></div>
+                <div id="resultSmall">*Los datos pueden no estar actualizados, por favor verifique la tasa actual del país correspondiente.</div>
+            </div>
+              
+            
+        </div>
+    </main>
+    
+     
+     
+
+    <footer>
+        © 2024 Creado por Sebastián Sosa.
+    </footer>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>

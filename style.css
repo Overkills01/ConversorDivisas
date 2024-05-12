@@ -1,0 +1,414 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffffd4;
+}
+
+#background-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+#background-image {
+    width: 100%;
+    height: 100%;
+    background: url('Imagenes/abstract-1138967_1280.jpg') center center fixed;
+    background-size: cover;
+    animation: zoom 20s infinite alternate, breathe 5s infinite;
+}
+
+@keyframes zoom {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes breathe {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Estilos específicos para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 35px 5% 10px 20px;
+    /* Ajustar padding del header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Resto de tu CSS... */
+
+
+
+
+
+
+label,
+input,
+select {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Estilos del footer */
+footer {
+    background-color: #333333ed;
+    color: #616161;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 0;
+    position: relative;
+
+
+}
+
+
+
+
+/* Estilos específicos para el menú  hamburguesa*/
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+    overflow: hidden;
+    text-align: center;
+    /* Centrar el texto */
+}
+
+.menu li {
+    display: inline-block;
+    /* Mostrar los elementos en línea */
+    margin-right: 20px;
+    /* Espaciado entre elementos */
+}
+
+.menu li:last-child {
+    margin-right: 0;
+    /* Eliminar margen derecho del último elemento */
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    padding: 14px 0;
+    /* Padding superior e inferior */
+    text-decoration: none;
+    width: 100%;
+    /* Anchura del enlace al 100% */
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+/* Estilos específicos para el pie de página */
+footer {
+
+    margin-top: auto;
+    /* Alinear el footer abajo */
+    width: 100%;
+}
+
+/* Media query para ajustar tamaño de texto y padding en el menú */
+@media (max-width: 768px) {
+    .menu li a {
+        padding: 10px 0;
+        /* Reducir padding en pantallas pequeñas */
+        font-size: 1em;
+        /* Reducir tamaño de texto en pantallas pequeñas */
+    }
+
+
+
+
+}
+
+/* Estilos para eliminar las flechas del input de número */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.conversor input {
+    width: 12rem;
+}
+
+/* Estilos para el conversor de divisas */
+.conversor {
+    /*max-width: 400px;*/
+
+    margin: 28px 0 100px 0px;
+    padding: 35px;
+    background-color: #333333fa;
+    border-radius: 25px;
+    box-shadow: 1px 6px 20px rgb(255 255 255);
+
+
+}
+
+.conversor h2 {
+    margin-top: 0;
+    font-size: 24px;
+    /*color: #333;*/
+    text-align: center;
+}
+
+.conversor input,
+.conversor select,
+.conversor button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: #34333380;
+    /* Color oscuro con transparencia ajustada */
+    color: white;
+    margin: 2px;
+}
+
+
+
+.conversor button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.conversor button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 43px;
+    font-size: 28px;
+    /*color: #333;*/
+}
+
+#tempResult {
+    font-size: 55px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.flag-icon {
+    font-size: 2.5em;
+    top: 0.2em;
+    border-radius: 5px;
+}
+
+
+
+
+.popupClass {
+    border-radius: 15px;
+
+}
+
+
+.username {
+    display: flex;
+    align-items: center;
+    font-size: 2.5em;
+    padding: 20px 20px 20px 5%;
+    height: 50px;
+    /* Altura fija para el contenedor */
+}
+
+.username span {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    margin-right: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#resultLarge {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#resultSmall {
+    font-size: 16px;
+    /* Font size pequeño */
+    padding: 9px;
+}
+
+
+#exchangeButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#exchangeButton:hover {
+    background-color: #0056b3;
+}
+
+#exchangeButton i {
+    margin-right: 5px;
+}
+
+/* CSS para el ticker */
+
+
+/* CSS para el ticker al estilo de CNN */
+
+.ticker-wrap {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e1e1e1;
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px 0;
+    z-index: 9999;
+    /* Asegura que el ticker esté por encima del contenido */
+}
+
+
+.ticker {
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+}
+
+.ticker__item {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.popup button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
+
+#workTimeResult {
+    font-size: 55px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+#workTimeResultDetail {
+    font-size: 16px;
+    padding: 9px;
+    text-align: center;
+}

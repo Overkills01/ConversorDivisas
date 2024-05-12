@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperaturas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+</head>
+
+<body>
+    <div id="background-container">
+        <div id="background-image"></div>
+    </div>
+
+    <header>
+        <div class="username">
+            <span style="font-family: 'Material Symbols Outlined', sans-serif;">&#xe7fd;</span> Nombre de Usuario
+        </div>
+
+
+    </header>
+    <div class="ticker-wrap">
+        <div class="ticker"></div>
+    </div>
+
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Divisas</a></li>
+            <li><a href="Temperatura.html">Temperatura</a></li>
+            <li><a href="Conversor de Tiempo de Trabajo.html">Tiempo</a></li>
+           
+        </ul>
+    </nav>
+
+
+
+    <main>
+
+        <!-- Conversor de Divisas -->
+        <div class="conversor">
+            <h2>Conversor de Temperaturas</h2>
+            <input type="number" id="temp" placeholder="Temperatura a convertir">
+
+            <select id="fromTemp">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+             <!-- Botón de intercambio -->
+           
+            
+
+            <button 
+            id="swapButton" onclick="swapTemperatureUnits()"><i class="fas fa-exchange-alt"></i>
+
+            </button>
+            <select id="toTemp">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+
+            <button onclick="convertTemperature()">Convertir</button>
+            <div id="tempResult"></div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        © 2024 Creado por Sebastián Sosa.
+    </footer>
+
+    <script src="script.js"></script>
+    
+
+</body>
+
+</html>
